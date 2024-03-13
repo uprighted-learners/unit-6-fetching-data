@@ -5,7 +5,7 @@ We will be setting up a DOM-based front-end application that will allow the user
 
 ## Setting up your Directory
 
- Install mongodb and express. 
+Run `npm install` to get the dependencies for the project
 
 At the root level of the directory, create `server.js` and `data-store.js`.
 
