@@ -1,36 +1,34 @@
 
 # LAB: Fetching Data
 
-We will be setting up a DOM-based front-end application that will allow the user to interact with a database, with a server acting as the interface between the two. We'll be building this off of the code we wrote for our Data Store lab so that we can hook into the functionality of the `DataStore` class.
+We will be setting up a DOM-based front-end application that will allow the user to interact with a database, with a server acting as the interface between the two. We'll be building this off of the code we wrote for our Constructing Library lab so that we can hook into the functionality of the `Library` class.
 
 ## Setting up your Directory
 
 Run `npm install` to get the dependencies for the project
 
-At the root level of the directory, create `server.js` and `data-store.js`.
-
-`data-store.js` will be identical to your previously built file.
+`library.js` will be identical to your previously built file.
 
 `server.js` will combine the code written in `mongo-client` with an Express server.
 
 Create a client folder inside that will store your front-end files.
 
 
-## A Note on Reusing DataStore
+## A Note on Reusing Library
 
-It can be tempting to copy and paste when bringing a large file, or chunk of code (such as our `DataStore` class) into a new application. **DON'T!**
+It can be tempting to copy and paste when bringing a large file, or chunk of code (such as our `Library` class) into a new application. **DON'T!**
 
 Typing the code out will help you remember the code, and it will allow your brain to make new connections between the code you are writing, and what it's telling the computer to do.
 
-Use your old `DataStore` as a reference, but actually type all the code out manually.
+Use your old `Library` as a reference, but actually type all the code out manually.
 
 **Don't copy and paste!**
 
 ## Setting up the Server
 
-The server needs the standard Express boilerplate. It also needs to have `DataStore` imported. You will also need to create a new `DataStore` and name it `collection` just as you did in the previous lab.
+The server needs the standard Express boilerplate. It also needs to have `Library` imported. You will also need to create a new `Library` and name it `collection` just as you did in the previous lab.
 
-Once you have the basic setup for your server you are going to want to set up routes for the following database operations you created in `DataStore`: `find`, `addEntry`, and `update`.
+Once you have the basic setup for your server you are going to want to set up routes for the following database operations you created in `Library`: `find`, `addEntry`, and `update`.
 
 These routes will be correlated with database "jobs", and you will have two kinds: GET jobs and POST jobs.
 
@@ -82,7 +80,7 @@ Use Compass to verify that when the user adds a new book or updates a preexistin
 
 ## Going Further
 
-Add a new method to `DataStore`, `delete`. It will take in an `id` as a parameter. 
+Add a new method to `Library`, `delete`. It will take in an `id` as a parameter. 
 
 On the front end, create a form that allows the user to enter in the TITLE of a book they want to delete. Remember that DOM does not refresh automatically. What's appended must be removed or it will stay on the page.
 
