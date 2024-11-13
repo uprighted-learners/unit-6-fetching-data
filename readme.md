@@ -1,7 +1,7 @@
 
-# LAB: Fetching Data
+# exercise: Fetching Data
 
-We will be setting up a DOM-based front-end application that will allow the user to interact with a database, with a server acting as the interface between the two. We'll be building this off of the code we wrote for our Constructing Library lab so that we can hook into the functionality of the `Library` class.
+We will be setting up a DOM-based front-end application that will allow the user to interact with a database, with a server acting as the interface between the two. We'll be building this off of the code we wrote for our Constructing Library exercise so that we can hook into the functionality of the `Library` class.
 
 ## Setting up your Directory
 
@@ -26,7 +26,7 @@ Use your old `Library` as a reference, but actually type all the code out manual
 
 ## Setting up the Server
 
-The server needs the standard Express boilerplate. It also needs to have `Library` imported. You will also need to create a new `Library` and name it `collection` just as you did in the previous lab.
+The server needs the standard Express boilerplate. It also needs to have `Library` imported. You will also need to create a new `Library` and name it `collection` just as you did in the previous exercise.
 
 Once you have the basic setup for your server you are going to want to set up routes for the following database operations you created in `Library`: `find`, `addEntry`, and `update`.
 
